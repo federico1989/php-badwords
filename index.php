@@ -9,7 +9,7 @@
         <?php
         $badword = $_GET["badword"];
         $paragrafo = "Un file di testo di piccole dimensioni che viene copiato sul disco rigido da un server di pagine Web e costituisce la carta d’identità dell’utente";
-        $lunghezzaParagrafo = strlen("Un file di testo di piccole dimensioni che viene copiato sul disco rigido da un server di pagine Web e costituisce la carta d’identità dell’utente");
+        $lunghezzaParagrafo = strlen($paragrafo);
         $nuovoParagrafo = str_replace($badword, "***", $paragrafo);
         ?>
         <h1><?php echo $nuovoParagrafo . " " . $lunghezzaParagrafo ?></h1>
